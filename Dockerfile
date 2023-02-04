@@ -19,4 +19,6 @@ RUN wget -q -O - \
 
 COPY entrypoint.sh /entrypoint.sh
 
+RUN git config --global --add safe.directory '*'
+
 ENTRYPOINT ["/entrypoint.sh"]
